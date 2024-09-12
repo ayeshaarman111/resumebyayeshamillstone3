@@ -1,0 +1,105 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #5eb40d;
+    color: #333;
+    line-height: 1.6;
+}
+
+.resume {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #eff3e5;
+    border-radius:90px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #efefef;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #038d03;
+}
+
+header p {
+    font-size: 18px;
+    color: hsl(0, 5%, 4%);
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 24px;
+    margin: 20px 0;
+    border-bottom: 2px solid #ccbe00;
+    padding-bottom: 8px;
+    color: #18830f;
+}
+
+/* Work Experience */
+.job {
+    margin: 20px 0;
+    animation: slideIn 0.8s ease-in-out;
+}
+
+.job h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.job p {
+    color: #666;
+}
+
+/* Skill List */
+.skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills li {
+    background: #ccc900;
+    color: #fff;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.skills li:hover {
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
